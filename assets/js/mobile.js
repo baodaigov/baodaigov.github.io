@@ -28,10 +28,6 @@ function isMobile() {
 	{
 				link = link.replace("https://baodaigov.github.io/m/tintuc/","tintuc/");
 				link = link.replace("https://baodaigov.github.io/m/tintuc/index.html","tintuc/index.html");
-				link = link.replace("https://baodaigov.github.io/m/tintuc/dao_thanh_minh_noi_se_phang_csbd_cung_voi_cac_dong_minh_neu_tiep_tuc_si_nhuc_chinh_quyen.html","tintuc/dao_thanh_minh_noi_se_phang_csbd_cung_voi_cac_dong_minh_neu_tiep_tuc_si_nhuc_chinh_quyen.html");
-				link = link.replace("https://baodaigov.github.io/m/tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html");
-				link = link.replace("https://baodaigov.github.io/m/tintuc/my_ban_ha_khinh_khi_cau_trung_quoc.html","tintuc/my_ban_ha_khinh_khi_cau_trung_quoc.html");
-				link = link.replace("https://baodaigov.github.io/m/tintuc/tong_thong_dao_thanh_minh_chuc_mung_nam_moi.html","tintuc/tong_thong_dao_thanh_minh_chuc_mung_nam_moi.html");
 				link = link.replace("https://baodaigov.github.io/m/become_a_citizen/","become_a_citizen/");
 				link = link.replace("https://baodaigov.github.io/m/become_a_citizen/index.html","become_a_citizen/index.html");
 				if (!link.includes("https://baodaigov.github.io/m/"))
@@ -50,12 +46,9 @@ function isMobile() {
 	  }
 	  else
 	  {
+				  link = link.replace("https://baodaigov.github.io/404.html","404.html");
 				  link = link.replace("https://baodaigov.github.io/tintuc/","tintuc/");
 				  link = link.replace("https://baodaigov.github.io/tintuc/index.html","tintuc/index.html");
-				  link = link.replace("https://baodaigov.github.io/tintuc/dao_thanh_minh_noi_se_phang_csbd_cung_voi_cac_dong_minh_neu_tiep_tuc_si_nhuc_chinh_quyen.html","tintuc/dao_thanh_minh_noi_se_phang_csbd_cung_voi_cac_dong_minh_neu_tiep_tuc_si_nhuc_chinh_quyen.html");
-				  link = link.replace("https://baodaigov.github.io/tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html","tintuc/cuu_tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html");
-				  link = link.replace("https://baodaigov.github.io/tintuc/my_ban_ha_khinh_khi_cau_trung_quoc.html","tintuc/my_ban_ha_khinh_khi_cau_trung_quoc.html");
-				  link = link.replace("https://baodaigov.github.io/tintuc/tong_thong_dao_thanh_minh_chuc_mung_nam_moi.html","tintuc/tong_thong_dao_thanh_minh_chuc_mung_nam_moi.html");
 				  link = link.replace("https://baodaigov.github.io/become_a_citizen/","become_a_citizen/");
 				  link = link.replace("https://baodaigov.github.io/become_a_citizen/index.html","become_a_citizen/index.html");
 
