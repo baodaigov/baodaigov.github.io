@@ -1,0 +1,20 @@
+User-agent:*
+Disallow: /attachments/
+Disallow: /assets/
+Disallow: /m/
+Disallow: /404.html
+Disallow: /google7f277b040364b531.html
+Disallow: /*.pdf$
+Disallow: /*.gif$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.PDF$
+Disallow: /*.GIF$
+Disallow: /*.DOC$
+Disallow: /*.DOCX$
+Disallow: /*.XLS$
+Disallow: /*.XLSX$
+Disallow: /*.txt$
+Disallow: /*.TXT$
