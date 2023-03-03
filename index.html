@@ -96,7 +96,7 @@
     // ]]>
   </script>
   <style>
-    .news_placeholder{background:#ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding:9px 7px;color:#004080!important;font-size:0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;border-top-left-radius:6px;border-top-right-radius:6px;width:130px;}.news_block{height: 470px;border-bottom: 1px solid #bebebe !important;}.news{animation:fade .5s}@keyframes fade{0%{opacity:0;}100%{opacity:1;}}.news-disappear{animation:fadeout .5s}@keyframes fadeout{0%{opacity:1}100%{opacity:0}}.news>p{font-size:13.5px;line-height:1.5;}.ban_do_placeholder{background: #ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding: 9px 7px;color: #004080!important;font-size: 0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;text-align:center;}.ban_do{border-left: 2px solid #bebebe !important;border-bottom: 2px solid #bebebe !important;border-right: 2px solid #bebebe !important;}
+    .news_placeholder{background:#ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding:9px 7px;color:#004080!important;font-size:0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;border-top-left-radius:6px;border-top-right-radius:6px;width:130px;}.news_block{height: 470px;border-bottom: 1px solid #bebebe !important;}.news{animation:fade .5s}@keyframes fade{0%{opacity:0;}100%{opacity:1;}}.news-disappear{animation:fadeout .5s}@keyframes fadeout{0%{opacity:1}100%{opacity:0}}.news p,.news-searchitem p{font-size:13.5px;line-height:1.5;}.ban_do_placeholder{background: #ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding: 9px 7px;color: #004080!important;font-size: 0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;text-align:center;}.ban_do{border-left: 2px solid #bebebe !important;border-bottom: 2px solid #bebebe !important;border-right: 2px solid #bebebe !important;}
   </style>
 </head><body style="padding:0px;margin:0px;" >
   <div class="wrapper">
@@ -164,16 +164,9 @@
         </div>
         <div class="search_area">
           <input type='text' name='search' id='scontent' class='search_content' autocomplete='off'/>
-          <button onclick='searchSendRequest()' id='btnsearch' class='search_btn'>Tìm kiếm</button>
+          <button id='btnsearch' class='search_btn'>Tìm kiếm</button>
         </div>
         <!-- Gui request tim kiem cho Google -->
-        <script type="text/javascript">
-          function searchSendRequest(){
-            var inputSearch = $('input[id=\'scontent\']').val().trim();
-
-            window.location.assign("https://www.google.com/search?q=" + inputSearch.trim().replace("\"", ""));
-          }
-        </script>
       </div>
       <div class="selector">
         <div class="selectorbtn" onclick="window.location.href='/';">TRANG CHỦ</div>
@@ -188,6 +181,129 @@
             .stand-for-ukraine{font-size: 0.85em!important;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;background:#d9e2ff url(/assets/image/ukraine.png) no-repeat 13px 50%;border: 1px solid #8da7ff;color: #34404F;display: block;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;margin: 2px auto 14px;padding: 6px 6px 6px 35px;text-align: left;}
           </style>
           <p class="stand-for-ukraine">Nhà nhà người người kề vai sát cánh với Ukraine để hợp tác kết thúc xung đột.</p>
+          <style>
+            .searching-result{color:#696969;margin:2em 0;font-size:0.85rem}.news-searchitem{margin-bottom:35px;display:flex;align-items: center;background: #cecece62;border:1px solid #c0c0c0;border-radius:15px;padding:10px}.news-searchitem img{width:127px;height:127px;margin-right:10px}.news-dateandauthor{font-size:0.65rem!important}.news-dateandauthor .news-date,.news-dateandauthor .news-author{font-size:0.65rem!important}.news-searchitem h2{font-size:1rem!important;margin:7px 0}.news-searchitem p{font-size:0.75rem}
+          </style>
+          <div class="searchbox">
+            <p class="searching-result"></p>
+            <div class="news-searchingblock">
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/dong-dat-tai-tnk-syria.jpg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">02/22/2023</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Động đất ở Thổ Nhĩ Kỳ và Syria – Thảm họa tồi tệ nhất châu Âu trong 100 năm</h2>
+                  <p> - Đã hơn 10 ngày sau trận động đất mạnh gây thảm họa tàn khốc tại Thổ Nhĩ Kỳ và Syria, hiện chính quyền và người dân hai nước đang dần chuyển sang nỗ lực tái thiết, nhanh chóng khắc phục hậu quả và hỗ trợ nhân đạo. Trận động đất được đánh giá là tồi tệ nhất ở Thổ Nhĩ Kỳ trong gần một thế kỷ qua đã phá hủy hàng chục nghìn tòa nhà, tạo ra... <a href='/tintuc/dong_dat_o_tho_nhi_ky_va_syria.html'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/china-balloon.webp" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">02/08/2023</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Mỹ bắn hạ khinh khí cầu Trung Quốc xâm nhập không phận Hoa Kỳ</h2>
+                  <p> - Ngày 28/1, khinh khí cầu Trung Quốc bất ngờ xuất hiện trên bầu trời nước Mỹ; mãi cho tới ngày 4/2, không quân Hoa Kỳ dùng tên lửa bắn hạ khinh khí cầu do thám Hoa Kỳ. Tổng thống Joe Biden hết lòng khen ngợi các phi công đã hoàn thành nhiệm vụ, mặc dù Joe Biden đã ra lệnh bắn hạ khinh khí cầu vào ngày 1/2, nhưng Lầu Năm Góc khuyến nghị... <a href='/tintuc/my_ban_ha_khinh_khi_cau_trung_quoc.html'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/mung_xuan_quy_mao_2023.jpg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">12/31/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Tổng thống Đào Thanh Minh gởi lời chúc mừng năm mới</h2>
+                  <p> - Ngày 31-12, Tổng thống Đào Thanh Minh đã gởi lời chúc mừng nhân dịp bước sang năm mới 2023, đồng thời cũng chúc Tết nguyên đán đến toàn thể nhân dân.
+                    "Năm 2023 đang tới, tôi gởi lời chân thành cầu mong các bạn từ các tĩnh và thành phố được phù hộ và an lành trong năm mới, chúng ta sẽ cùng nhau vươt mọi khó khăn... <a href='/tintuc/tong_thong_dao_thanh_minh_chuc_mung_nam_moi.html'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/1200px-RFI_logo_2013.png" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">12/8/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Đào Thanh Minh nói sẽ 'phang' CSBĐ cùng với các đồng minh nếu tiếp tục sỉ nhục Chính quyền</h2>
+                  <p> - Tối 8/12, trả lời phỏng vấn của đài phát thanh quốc tế RFI, về việc nêu ý kiến của ông về những lời sỉ nhục từ phía chính quyền CSBĐ, Đại tướng Đào Thanh Minh – Tổng thống Quốc gia Bảo Đại cho rằng:<br/>Tôi đã nghĩ đến những điều mình sẽ nói trước tiên trong giây phút này. Phải nói rằng khi bên Cộng sản Bảo Đại đã chính thức chiếm được... <a href='/tintuc/dao_thanh_minh_noi_se_phang_csbd_cung_voi_cac_dong_minh_neu_tiep_tuc_si_nhuc_chinh_quyen.html'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/chien_tranh_vinh_thuy.jpeg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">12/6/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Tổng thống Quốc gia Bảo Đại kêu gọi Pháp viện trợ quân sự</h2>
+                  <p> - Vừa mới đây, tổng thống Chính quyền Bảo Đại (Đào Thanh Minh) đã yêu cầu Chính phủ Pháp viện trợ nước ngoài dành cho Quốc gia Bảo Đại đã bị cách xa khỏi đất liền sau khi CHND Bảo Đại chiếm toàn bộ vùng lãnh thổ gần đây nhất. Ông cho rằng chính phủ Pháp cần dùng những số tiền trên để trợ giúp cho một cuộc chiến tranh giữa 2 chế độ ch... <a href='/tintuc/tong_thong_quoc_gia_bao_dai_keu_goi_phap_vien_tro_quan_su.html'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/quoc_gia_bao_dai_dang_thu_nghiem_cuoc_phong_ten_lua.jpg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">12/5/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Quốc gia Bảo Đại đang thử nghiệm cuộc phóng tên lửa, dự định sẽ áp dụng chiến thuật vào chiến đấu</h2>
+                  <p> - Sáng 5/12, các quan chức của bộ máy chính quyền Cộng sản Bảo Đại cho biết Quốc gia Bảo Đại đang chuẩn bị mở một cuộc thử nghiệm phóng tên lửa đạn đạo. Theo Bộ trưởng Quốc phòng CHND Bảo Đại Đào Thị Cẩm, Quốc gia Bảo Đại sẽ phóng lần lươt 2 tên lửa đầu tiên vào khoảng 6h30-7h00 sáng theo giờ địa phương. Trong đó, cả 2 tên lửa sẽ đạt độ c... <a href='https://bit.do/YeetYeet'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/chnd_bao_dai_ban_canh_cao_tau_quoc_gia_bao_dai.jpg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">12/1/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>CHND Bảo Đại bắn cảnh cáo tàu Quốc gia Bảo Đại, tàu QGBĐ bắn pháo đáp trả</h2>
+                  <p> - Tàu Quốc gia Bảo Đại đã bắn 5 quả đạn pháo vào khoảng 7h25 sáng 1/12 sau khi Quân đội Nhân dân Bảo Đại bắn cảnh cáo con tàu Quốc gia Bảo Đại do tàu này vượt qua ranh giới trên biển của Việt Nam. Theo Bộ tổng tham mưu Quân đội Nhân dân Bảo Đại cho biết quân đội nước QGBĐ đã bắn 5 quả đạn pháo vào vùng biển phía Tây nước Việt Nam sáng 1/1... <a href='https://bit.do/YeetYeet'>Xem chi tiết</a></p>
+                </div>
+              </div>
+              <div class="news-searchitem" id="newsBlock">
+                <img src="/assets/image/chinh_phu_phap_giam_sat_dien_tap_hat_nhan.jpg" alt="" width="100%" height="200px"/>
+                <div>
+                  <div class="news-dateandauthor" style="margin: 0;margin-top:10px;">
+                    <span class="news-date">11/29/2022</span>
+                    -
+                    <span class="news-author">BDN</span>
+                  </div>
+                  <h2>Chính phủ Pháp giám sát diễn tập hạt nhân của Quốc gia Bảo Đại</h2>
+                  <p> - “Quả là một thành công bên phía chúng tôi. Tính hiệu quả và khả năng chiến đấu thực tế của lực lượng tác chiến hạt nhân được thể hiện đầy đủ. Chúng tôi hoàn toàn sẵn sàng tấn công và tiêu diệt các mục tiêu bất cứ lúc nào và từ bất kỳ vị trí nào”, tổng thống Emmanuel Macron nói. Chính phủ Pháp tuyên bố sẽ tăng cường các hoạt động quân sự... <a href='https://bit.do/YeetYeet'>Xem chi tiết</a></p>
+                </div>
+              </div>
+            </div>
+            <script>
+              $("#btnsearch").click(function() {
+                if($('#scontent').val() != ''){
+                  $('.first').hide()
+                  $('.right').hide()
+                  $('.searchbox').show()
+                  var value = $("#scontent").val().toLowerCase().trim();
+                  $('.news-searchingblock .news-searchitem').show().filter(function() {
+                    return $(this).text().toLowerCase().trim().indexOf(value) == -1;
+                  }).hide();
+                  $('.searching-result').text(`${$('.news-searchingblock .news-searchitem').length - $('.news-searchingblock .news-searchitem[style="display: none;"]').length} tin tức đã được tìm kiếm`)
+                }else{
+                  $('.searchbox').hide()
+                  $('.first').show()
+                  $('.right').show()
+                }
+              });
+            </script>
+          </div>
           <div class="first">
             <img src="/assets/image/baodaigov.gif" width="580px"/>
             <style>
