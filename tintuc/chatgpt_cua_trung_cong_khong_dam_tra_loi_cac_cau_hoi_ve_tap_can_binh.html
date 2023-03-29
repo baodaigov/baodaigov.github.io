@@ -93,7 +93,7 @@
     // ]]>
   </script>
   <style>
-    .news_image{margin:15px 0;display:block;}.news_image figcaption{caption-side: bottom;font-style: italic;background: #f1f1f1;text-align: center;padding-top: 2px;font-size: 13px;line-height: 22px;padding: 0;}.news p,.news-searchitem p,.news>strong{font-size:0.90em;line-height:1.5;}.ban_do_placeholder{background: #ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding: 9px 7px;color: #004080!important;font-size: 0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;text-align:center;}.ban_do{border-left: 2px solid #bebebe !important;border-bottom: 2px solid #bebebe !important;border-right: 2px solid #bebebe !important;}.news_panel{border-top: solid 1px #CBCCCE;padding: 10px 0;margin-top: 10px;overflow: hidden;}.news_panel *{color:#850000;text-decoration:none;}.news_panelTITLE{font-size:1em;}
+    .news_image{margin:15px 0;display:block;}.news_image figcaption{caption-side: bottom;font-style: italic;background: #f1f1f1;text-align: center;padding-top: 2px;font-size: 13px;line-height: 22px;padding: 0;}.news p,.news-searchitem p,.news>strong{font-size:0.90em;line-height:1.5;}.ban_do_placeholder{background: #ededed;border-left: 1px solid #bebebe !important;border-top: 1px solid #bebebe !important;border-right: 1px solid #bebebe !important;padding: 9px 7px;color: #004080!important;font-size: 0.75em;font-family:"GG Sans Bold", Arial, Helvetica, sans-serif;text-align:center;}.ban_do{border-left: 2px solid #bebebe !important;border-bottom: 2px solid #bebebe !important;border-right: 2px solid #bebebe !important;}.news_panel{border-top: solid 1px #CBCCCE;padding: 10px 0;margin-top: 10px;overflow: hidden;}.news_panel *{text-decoration:none;}.news_panelTITLE{font-size:1em;}
   </style>
 </head><body style="padding:0px;margin:0px;" >
   <div class="wrapper">
@@ -328,14 +328,22 @@
             <div style="margin-top:10px;">
               <div class="news_block">
                 <div class="news_panel">
-                  <table style="margin-top: 5px;width:100%;"> <tbody><tr> <td> <a href="#" class="news_panelTITLE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tăng/Giảm cỡ chữ:&nbsp;</a> <a href="javascript:fontPlus()" style="font-family:GG Sans Bold, Arial, Helvetica, sans-serif;">TĂNG+&nbsp;&nbsp;&nbsp;</a> <a href="javascript:fontMinus()" style="font-family:GG Sans Bold, Arial, Helvetica, sans-serif;">GIẢM-&nbsp;</a> </td> </tr> </tbody></table>
+                  <div style="float:right">
+                    <b style="font-size:0.9em">Xem với cỡ chữ</b>
+                    <a href="javascript:fontMinus()" title="Giảm kích thước chữ">
+                      <b style="font-size:14px; color:#004080; margin:0 10px;">A</b>
+                    </a>
+                    <a href="javascript:fontPlus()" title="Tăng kích thước chữ">
+                      <b style="font-size:23px; color:#004080">A</b>
+                    </a>
+                  </div>
                 </div>
                 <div class="news" id="newsBlock">
                   <h2>Sốc: ChatGPT của Trung Cộng không dám trả lời các câu hỏi về Tập Cận Bình</h2>
                   <h4>BDN - 21 thg 3 năm 2023</h4>
                   <figure class="news_image">
                     <img src="/assets/image/chatgpt2.jpg" alt="ChatGPT của OpenAI" title="ChatGPT của OpenAI" width="100%;" style="display:block"/>
-		            <figcaption>ChatGPT của OpenAI.</figcaption>
+		              <figcaption>ChatGPT của OpenAI.</figcaption>
                   </figure>
                   <p>ChatGPT là một chatbot được phát triển bởi công ty OpenAI có trụ sở tại San Francisco, California, Hoa Kỳ. Kể từ khi được phát hành vào tháng 11/2022, nó đã tạo nên làn sóng tranh cãi rất lớn, đặc biệt là trong giới công nghệ chatbot trí tuệ nhân tạo (AI). Nắm bắt thời cơ này, gã khổng lồ Trung Quốc đã ra mắt một con chatbot tương tự được cho là ChatGPT của Trung Quốc, tên là Ernie, do công ty Baidu lập trình. Được biết, Baidu ra mắt con chatbot này nhằm mục đích cạnh tranh với ChatGPT của OpenAI.</p>
                   <p>Xét qua một lượt phân tích và trải nghiệm của người dùng, họ đưa ra phản hồi tích cực về trải nghiệm khi sử dụng Ernie. Tuy nhiên, Ernie sẽ hạn chế trả lời các câu hỏi liên quan đến chính trị nước Trung Quốc đại lục, họ nói rằng đây là những chủ đề "nhạy cảm" và không thuận tiện để thảo luận công khai.</p>
@@ -344,62 +352,62 @@
                   <p>Có thể nói rằng, Ernie hầu hết không muốn bình luận gì về những câu hỏi này vì nội dung đã bị kiểm duyệt nghiêm ngặt, đặc biệt là trong một môi trường mà ngôn luận trực tuyến ngày càng bị thắt chặt.</p>
                   <p>Baidu khẳng định bot đã tuân thủ yêu cầu của chính phủ trong việc kiểm duyệt kết quả tìm kiếm về các chủ đề nhạy cảm. Khi được hỏi về cách xử lý các chủ đề nhạy cảm, bot cho biết họ đang xem xét các luật và tiêu chuẩn đạo đức có liên quan để xác định xem chủ đề có nên thảo luận hay không.</p>
                   <p>Giám đốc điều hành Baidu Robin Li nói rằng chatbot không hoàn hảo và mong người dùng hiểu cho sai lầm của mình, đồng thời ông tự tin rằng chatbot này sẽ tốt hơn với phản hồi của người dùng.</p>
-      <style>
-        .news-sharing{margin-top:50px;display: flex;align-items: center;justify-content:center}.news-sharing>p{font-size: 0.9rem;}.news-sharing ul{list-style-type: none;padding:0;margin:0}.news-sharing ul li{display:inline-block;padding-left:10px}
-      </style>
-      <div class="news-sharing">
-        <p>Chia sẻ tin tức: </p>
-        <ul style="margin-left:10px">
-          <li>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html" title="Chia sẻ trên Facebook">
-              <img src="/assets/image/Icon_Connect_Facebook.png" alt="Chia sẻ trên Facebook" width="auto" height="25px">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&text=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Twitter">
-              <img src="/assets/image/Icon_Connect_Twitter.png" alt="Chia sẻ trên Facebook" width="auto" height="25px">
-            </a>
-          </li>
-          <li>
-            <a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&media=https%3A%2F%2Fbaodaigov.github.io%2Fassets%2Fimage%2Fchatgpt2.jpg&description=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Pinterest">
-              <img src="/assets/image/Icon_Connect_Pinterest.png" alt="Chia sẻ trên Pinterest" width="auto" height="25px">
-            </a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&title=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Linkedin">
-              <img src="/assets/image/Icon_Connect_Linkedin.png" alt="Chia sẻ trên Linkedin" width="auto" height="25px">
-            </a>
-          </li>
-        </ul>
-      </div>
-		</div>
+                  <style>
+                    .news-sharing{margin-top:50px;display: flex;align-items: center;justify-content:center}.news-sharing>p{font-size: 0.9rem;}.news-sharing ul{list-style-type: none;padding:0;margin:0}.news-sharing ul li{display:inline-block;padding-left:10px}
+                  </style>
+                  <div class="news-sharing">
+                    <p>Chia sẻ tin tức: </p>
+                    <ul style="margin-left:10px">
+                      <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html" title="Chia sẻ trên Facebook">
+                          <img src="/assets/image/Icon_Connect_Facebook.png" alt="Chia sẻ trên Facebook" width="auto" height="25px">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&text=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Twitter">
+                          <img src="/assets/image/Icon_Connect_Twitter.png" alt="Chia sẻ trên Facebook" width="auto" height="25px">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&media=https%3A%2F%2Fbaodaigov.github.io%2Fassets%2Fimage%2Fchatgpt2.jpg&description=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Pinterest">
+                          <img src="/assets/image/Icon_Connect_Pinterest.png" alt="Chia sẻ trên Pinterest" width="auto" height="25px">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbaodaigov.github.io%2Ftintuc%2Fchatgpt_cua_trung_cong_khong_dam_tra_loi_cac_cau_hoi_ve_tap_can_binh.html&title=Hey%2C%20check%20this%20new%20post%20I%20got%20on%20Baodaigov%20website!" title="Chia sẻ trên Linkedin">
+                          <img src="/assets/image/Icon_Connect_Linkedin.png" alt="Chia sẻ trên Linkedin" width="auto" height="25px">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+		            </div>
                 <script type="text/javascript">
                   function fontPlus() {
-    var divTemp = document.getElementById('newsBlock','em');
-    if (divTemp.style.fontSize == '') divTemp.style.fontSize = '12px';
-    var s = divTemp.style.fontSize;
-    if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
-    divTemp.style.fontSize = (parseFloat(s) + 4) + 'px';
-    divTemp = document.getElementById('newsBlock');
-    if (divTemp.style.fontSize == '') divTemp.style.fontSize = '12px';
-    s = divTemp.style.fontSize;
-    if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
-    divTemp.style.fontSize = (parseFloat(s) + 4) + 'px';
-}
+                      var divTemp = document.getElementById('newsBlock','em');
+                      if (divTemp.style.fontSize == '') divTemp.style.fontSize = '12px';
+                      var s = divTemp.style.fontSize;
+                      if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
+                      divTemp.style.fontSize = (parseFloat(s) + 4) + 'px';
+                      divTemp = document.getElementById('newsBlock');
+                      if (divTemp.style.fontSize == '') divTemp.style.fontSize = '12px';
+                      s = divTemp.style.fontSize;
+                      if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
+                      divTemp.style.fontSize = (parseFloat(s) + 4) + 'px';
+                  }
 
-function fontMinus() {
+                  function fontMinus() {
 
-    var divTemp = document.getElementById('newsBlock');
-    if (divTemp.style.fontSize == '') divTemp.style.fontSize = '11px';
-    var s = divTemp.style.fontSize;
-    if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
-    divTemp.style.fontSize = (parseFloat(s) - 2) + 'px';
-    divTemp = document.getElementById('newsBlock');
-    if (divTemp.style.fontSize == '') divTemp.style.fontSize = '11px';
-    s = divTemp.style.fontSize;
-    if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
-    divTemp.style.fontSize = (parseFloat(s) - 2) + 'px';
-}
+                      var divTemp = document.getElementById('newsBlock');
+                      if (divTemp.style.fontSize == '') divTemp.style.fontSize = '11px';
+                      var s = divTemp.style.fontSize;
+                      if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
+                      divTemp.style.fontSize = (parseFloat(s) - 2) + 'px';
+                      divTemp = document.getElementById('newsBlock');
+                      if (divTemp.style.fontSize == '') divTemp.style.fontSize = '11px';
+                      s = divTemp.style.fontSize;
+                      if ((s.indexOf('px') > -1) && (s.indexOf('px') == (s.length - 2))) s = s.substring(0, s.indexOf('px'));
+                      divTemp.style.fontSize = (parseFloat(s) - 2) + 'px';
+                  }
                 </script>
               </div>
             </div>
